@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="3" passed="3">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="66587" started-at="2020-07-23T11:10:41Z" finished-at="2020-07-23T11:11:48Z">
+    <groups>
+    </groups>
+    <test name="Regression" duration-ms="66587" started-at="2020-07-23T11:10:41Z" finished-at="2020-07-23T11:11:48Z">
+      <class name="MavenSeleniumTestProject.seleniumProject.TestCases">
+        <test-method status="PASS" signature="configurationsSetup()[pri:0, instance:MavenSeleniumTestProject.seleniumProject.TestCases@1195bc3]" name="configurationsSetup" is-config="true" duration-ms="3710" started-at="2020-07-23T16:41:36Z" finished-at="2020-07-23T16:41:39Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configurationsSetup -->
+        <test-method status="PASS" signature="MMTTest1()[pri:1, instance:MavenSeleniumTestProject.seleniumProject.TestCases@1195bc3]" name="MMTTest1" duration-ms="7122" started-at="2020-07-23T16:41:39Z" finished-at="2020-07-23T16:41:46Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- MMTTest1 -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:MavenSeleniumTestProject.seleniumProject.TestCases@1195bc3]" name="tearDown" is-config="true" duration-ms="1263" started-at="2020-07-23T16:41:46Z" finished-at="2020-07-23T16:41:48Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- MavenSeleniumTestProject.seleniumProject.TestCases -->
+      <class name="MavenSeleniumTestProject.seleniumProject.TestCases3">
+        <test-method status="PASS" signature="configurationsSetup()[pri:0, instance:MavenSeleniumTestProject.seleniumProject.TestCases3@7f6b8c]" name="configurationsSetup" is-config="true" duration-ms="30211" started-at="2020-07-23T16:40:41Z" finished-at="2020-07-23T16:41:11Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configurationsSetup -->
+        <test-method status="PASS" signature="MMTTest3()[pri:1, instance:MavenSeleniumTestProject.seleniumProject.TestCases3@7f6b8c]" name="MMTTest3" duration-ms="8970" started-at="2020-07-23T16:41:11Z" finished-at="2020-07-23T16:41:20Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- MMTTest3 -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:MavenSeleniumTestProject.seleniumProject.TestCases3@7f6b8c]" name="tearDown" is-config="true" duration-ms="1185" started-at="2020-07-23T16:41:20Z" finished-at="2020-07-23T16:41:22Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- MavenSeleniumTestProject.seleniumProject.TestCases3 -->
+      <class name="MavenSeleniumTestProject.seleniumProject.TestCases2">
+        <test-method status="PASS" signature="configurationsSetup()[pri:0, instance:MavenSeleniumTestProject.seleniumProject.TestCases2@187f14]" name="configurationsSetup" is-config="true" duration-ms="4341" started-at="2020-07-23T16:41:22Z" finished-at="2020-07-23T16:41:26Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configurationsSetup -->
+        <test-method status="PASS" signature="MMTTest2()[pri:1, instance:MavenSeleniumTestProject.seleniumProject.TestCases2@187f14]" name="MMTTest2" duration-ms="8746" started-at="2020-07-23T16:41:26Z" finished-at="2020-07-23T16:41:35Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- MMTTest2 -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:MavenSeleniumTestProject.seleniumProject.TestCases2@187f14]" name="tearDown" is-config="true" duration-ms="989" started-at="2020-07-23T16:41:35Z" finished-at="2020-07-23T16:41:36Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- MavenSeleniumTestProject.seleniumProject.TestCases2 -->
+    </test> <!-- Regression -->
+  </suite> <!-- Suite -->
+</testng-results>

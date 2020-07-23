@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <listeners>
+    <listener class-name="resources.Listeners"/>
+  </listeners>
+  <test name="Regression">
+    <classes>
+      <class name="MavenSeleniumTestProject.seleniumProject.TestCases3"/>
+      <class name="MavenSeleniumTestProject.seleniumProject.TestCases2"/>
+      <class name="MavenSeleniumTestProject.seleniumProject.TestCases"/>
+    </classes>
+  </test> <!-- Regression -->
+</suite> <!-- Failed suite [Suite] -->

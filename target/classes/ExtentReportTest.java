@@ -10,10 +10,10 @@ public class ExtentReportTest {
 	
 	public static ExtentReports getExtentReport(){
 		
-		ExtentHtmlReporter reporter = new ExtentHtmlReporter(System.getProperty("user.dir")+"\\Extentreports\\report.html");
+		ExtentHtmlReporter reporter = new ExtentHtmlReporter(System.getProperty("user.dir")+"//Extentreports//report.html");
 		
 		String cwd = System.getProperty("user.dir");
-		String configfilepath = cwd+"\\src\\main\\java\\configurations\\avent-config.xml";
+		String configfilepath = cwd+"//src//main//java//configurations//avent-config.xml";
 		System.out.println(configfilepath);
 	reporter.loadXMLConfig(new File(configfilepath), false);
 	report = new ExtentReports();

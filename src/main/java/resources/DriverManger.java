@@ -16,7 +16,7 @@ public class DriverManger {
 	
 	public static Properties readProperties() throws IOException{
 		String cwd = System.getProperty("user.dir");
-		String propfile = cwd+"\\src\\main\\java\\configurations\\config.properties";
+		String propfile = cwd+"//src//main//java//configurations//config.properties";
 		
 		FileInputStream fis = new FileInputStream(new File(propfile));
 		Properties p = new Properties();
@@ -28,9 +28,10 @@ public class DriverManger {
 	public static WebDriver getDriver() throws IOException{
 		Properties p = readProperties();
 		String browser = p.getProperty("browser");
-		
+		String root = System.getProperty("user.dir");
+		String driverdir = root+"//src//main//java//resources//chromedriver.exe";
 		if(browser.equals("chrome")){
-			System.setProperty("webdriver.chrome.driver","C:\\Users\\chandrasekhar\\Eclipse Selenium wokspace\\selenium drivers\\chromedriver.exe");
+			System.setProperty("webdriver.chrome.driver",driverdir);
 			System.out.println("initialized");
 			driver = new ChromeDriver();
 		}

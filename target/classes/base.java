@@ -26,7 +26,7 @@ public class base {
 	
 	ThreadLocal<Logger> ThreadLogger = new ThreadLocal<Logger>();
 	
-	public static File imgfiledir =new File(System.getProperty("user.dir")+"\\screenshots");
+	public static File imgfiledir =new File(System.getProperty("user.dir")+"//screenshots");
 	
 //	public void extentSetUp(){
 //		report = new ExtentReports();

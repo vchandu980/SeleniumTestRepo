@@ -8,6 +8,7 @@ import java.util.Properties;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.testng.annotations.Test;
 
 public class DriverManger {
@@ -30,6 +31,8 @@ public class DriverManger {
 		String browser = p.getProperty("browser");
 		
 		if(browser.equals("chrome")){
+//			ChromeOptions options = new ChromeOptions();
+//			options.setHeadless(true);
 			System.setProperty("webdriver.chrome.driver","C:\\Users\\chandrasekhar\\Eclipse Selenium wokspace\\selenium drivers\\chromedriver.exe");
 			System.out.println("initialized");
 			driver = new ChromeDriver();

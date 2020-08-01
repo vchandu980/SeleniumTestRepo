@@ -1,6 +1,7 @@
 package MavenSeleniumTestProject.seleniumProject;
 
 import java.io.IOException;
+import java.lang.reflect.InvocationTargetException;
 
 import org.apache.logging.log4j.LogManager;
 import org.testng.annotations.AfterClass;
@@ -25,13 +26,14 @@ public class TestCases extends base{
 	}
 	
 	@Test(priority=1)
-	public void MMTTest1() throws IOException{
+	public void MMTTest1() throws IOException, IllegalAccessException, IllegalArgumentException, InvocationTargetException, SecurityException, InstantiationException, NoSuchMethodException{
 		
 		
 		
 		wbopenurl("https://www.makemytrip.com");
 		wbClick(mmt.LoginSignupButton());
 		wbScreenShot();
+		wbRunScript(Module.class);
 		
 	}
 	
@@ -41,6 +43,6 @@ public class TestCases extends base{
 	public void tearDown(){
 		System.out.println("flushed");
 		
-		driver.quit();
+//		driver.quit();
 	}
 }

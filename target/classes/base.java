@@ -2,6 +2,8 @@ package resources;
 
 import java.io.File;
 import java.io.IOException;
+import java.lang.reflect.InvocationTargetException;
+import java.lang.reflect.Method;
 
 import org.apache.commons.io.FileUtils;
 import org.apache.logging.log4j.Logger;
@@ -64,5 +66,30 @@ public class base {
 		FileUtils.copyFileToDirectory(src, imgfiledir);
 		
 	}
+//	
+//	public void wbRunScript(Class modulename) throws IllegalAccessException, IllegalArgumentException, InvocationTargetException{
+//	
+//		modulename.getDeclaredMethods()[0].invoke(null, this.driver);
+//	}
+	
+	public void wbRunScript(Class modulename) throws IllegalAccessException, IllegalArgumentException, InvocationTargetException, SecurityException, InstantiationException, NoSuchMethodException{
+		Class[] c = new Class[2];
+		c[0] = WebDriver.class;
+		c[1] = Logger.class;
+		Method marr = modulename.getDeclaredMethod("run",c);
+		Object object = modulename.newInstance();
+		System.out.println(object);
+		System.out.println(object.toString());
+		marr.invoke(object,this.driver,this.log);
+	}
+	
+//	public static void wbType(WebElement element, String text){
+//		element.sendKeys(text);
+//	}
+	
+	public void wbType(WebElement element, String text){
+		element.sendKeys(text);
+	}
+
 
 }

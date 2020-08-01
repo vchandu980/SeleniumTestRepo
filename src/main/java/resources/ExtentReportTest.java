@@ -14,7 +14,7 @@ public class ExtentReportTest {
 		
 		String cwd = System.getProperty("user.dir");
 		String configfilepath = cwd+"//src//main//java//configurations//avent-config.xml";
-		System.out.println(configfilepath);
+//		System.out.println(configfilepath);
 	reporter.loadXMLConfig(new File(configfilepath), false);
 	report = new ExtentReports();
 	report.attachReporter(reporter);

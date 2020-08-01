@@ -24,7 +24,7 @@ public class TestCases3 extends base{
 		mmt = new MMTLandingPage(driver);
 	}
 	
-	@Test(priority=1)
+	@Test
 	public void MMTTest3() throws IOException{
 		
 		

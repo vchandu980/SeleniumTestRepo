@@ -40,7 +40,7 @@ public class TestCases extends base{
 	@AfterClass
 	public void tearDown(){
 		System.out.println("flushed");
-		
+		System.out.println("New change i for checking github usage");
 		driver.quit();
 	}
 }

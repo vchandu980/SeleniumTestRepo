@@ -41,6 +41,7 @@ public class TestCases3 extends base{
 	public void tearDown(){
 		System.out.println("flushed");
 		System.out.println("added test text");
+		System.out.println("new change added to test more");
 		driver.quit();
 		
 	}
